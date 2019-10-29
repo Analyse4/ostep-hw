@@ -6,7 +6,7 @@
 int
 main(int argc, char *argv[]) {
     int fd = open("./test-2.txt", O_CREAT|O_RDWR|O_TRUNC, S_IRUSR|S_IWUSR);
-    if (fd < 1) {
+    if (fd < 0) {
         fprintf(stderr, "open file faild");
     }
     int rc = fork();

@@ -16,6 +16,10 @@ In this homework, you are to gain some familiarity with the process management A
     - History and compatibility issues
     - **apue-8.10*
 5. Now write a program that uses wait() to wait for the child process to finish in the parent. What does wait() return? What happens if you use wait() in the child?
+    - Child Process pid number, whether child process is successful or unsuccessful
+    - wait() in child process will return -1
 6. Write a slight modification of the previous program, this time using waitpid() instead of wait(). When would waitpid() be useful?
 7. Write a program that creates a child process, and then in the child closes standard output (STDOUT FILENO). What happens if the child calls printf() to print some output after closing the descriptor?
+    - The ouput won't show on terminal
 8. Write a program that creates two children, and connects the standard output of one to the standard input of the other, using the pipe() system call.
+    - See *8.c*
