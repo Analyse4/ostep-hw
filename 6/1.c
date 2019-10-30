@@ -1,4 +1,3 @@
-// it's useless for amd64, but the solution can try
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,6 +60,8 @@ main(int argc, char *argv[]) {
             read(second_pipefd[0], NULL, 0);
         }
         gettimeofday(&end, NULL);
+        // I think this Measurement unit is 4 system calls and two times context switch
+        // so it may be a little inaccurate
         printf("context switch: %f microseconds\n", (float) (end.tv_sec * 1000000 + end.tv_usec - start.tv_sec * 1000000 - start.tv_usec) / nloops);
     }
     return 0;
