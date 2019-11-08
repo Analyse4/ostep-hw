@@ -5,3 +5,4 @@ Learn through [ostep](http://pages.cs.wisc.edu/~remzi/OSTEP/).
 
 uncompleted
 - 8.5
+- 9.2.4
