@@ -37,6 +37,7 @@ In this homework, you will gain some familiarity with memory allocation. First, 
 Segmentation fault
 ```
 4. Write a simple program that allocates memory using malloc() but forgets to free it before exiting. What happens when this program runs? Can you use gdb to find any problems with it? How about valgrind (again with the --leak-check=yes flag)?
+
 *gdb*
 ```
 root@iZwz9a0z1wy5zy1geob36gZ:~/ostep-hw/14# gdb 4
